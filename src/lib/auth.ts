@@ -15,6 +15,16 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true
   },
+  user: {
+    additionalFields: {
+      phone: {
+        type: "number",
+        fieldName: "phone",
+        required: false,
+        input: false
+      }
+    }
+  },
   plugins: [
     openAPI()
   ],

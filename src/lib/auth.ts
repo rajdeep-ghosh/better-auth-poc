@@ -21,7 +21,7 @@ export const auth = betterAuth({
         type: "number",
         fieldName: "phone",
         required: false,
-        input: false
+        input: true
       }
     }
   },

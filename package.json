@@ -1,5 +1,5 @@
 {
-  "name": "better-auth-poc",
+  "name": "better-auth-demo",
   "version": "1.0.0",
   "scripts": {
     "dev": "tsx watch src/server.ts",

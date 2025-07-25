@@ -5,7 +5,7 @@ import { openAPI } from "better-auth/plugins"
 import { db } from "./db";
 
 export const auth = betterAuth({
-  appName: "Better Auth POC",
+  appName: "Better Auth Demo",
   secret: process.env.BETTER_AUTH_SECRET,
   baseURL: process.env.BETTER_AUTH_URL,
   database: drizzleAdapter(db, {
@@ -29,6 +29,6 @@ export const auth = betterAuth({
     openAPI()
   ],
   advanced: {
-    cookiePrefix: "better-auth-poc",
+    cookiePrefix: "better-auth-demo",
   }
 });
